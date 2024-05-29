@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foursixmart</title>
+    <style>
+        body {
+            background-color: #eaeaea;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #232f3e;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            border: none;
+            border-radius: 5px;
+        }
+        nav {
+            background-color: #37475a;
+            padding: 10px 20px;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            height: 380px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            max-height: 150px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+        .product h2 {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+        .product p {
+            margin: 5px 0;
+        }
+        .product .price {
+            font-size: 1.2em;
+            color: #b12704;
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: green;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: auto;
+        }
+        .button:hover {
+            background-color: darkgreen;
+        }
+        .contact {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact p {
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #232f3e;
+            color: #ccc;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Foursixmart</h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for products...">
+        </div>
+    </header>
+
+    <nav>
+        <a href="#">Daftar Layanan</a>
+    </nav>
+
+    <div class="products">
+        <div class="product">
+            <img src="Netflix.jpg" alt="Product 1">
+            <h2>Netflix Premium</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 35.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Netflix%20Premium." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Canva.jpg" alt="Product 2">
+            <h2>Canva Pro</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 25.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Canva%20Pro." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Spotify.jpg" alt="Product 3">
+            <h2>Spotify Premium</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 25.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Spotify%20Premium." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Capcut.jpg" alt="Product 4">
+            <h2>Capcut Pro</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 25.000/Tahun</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Capcut%20Pro." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Vidio.jpg" alt="Product 5">
+            <h2>Vidio Premium</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 35.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Vidio%20Premium." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Youtube.jpg" alt="Product 6">
+            <h2>Youtube Premium</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 35.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Youtube%20Premium." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Disney.jpg" alt="Product 7">
+            <h2>Disney+ Hotstar</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 45.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Disney+%20Hotstar." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Bstation.jpg" alt="Product 8">
+            <h2>Bstation Premium</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 30.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Bstation%20Premium." class="button">Pesan</a>
+        </div>
+        <div class="product">
+            <img src="Wattpaad.jpg" alt="Product 9">
+            <h2>Wattpaad Premium</h2>
+            <p>Harga:</p>
+            <p class="price">IDR 20.000/Bulan</p>
+            <a href="https://wa.me/6283877803504?text=Halo,%20saya%20ingin%20memesan%20produk%20Wattpaad%20Premium." class="button">Pesan</a>
+        </div>
+    </div>
+
+    <div class="contact">
+        <p>Email: <a href="mailto:agnaqill@gmail.com" style="color: #b12704;">agnaqill@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/6283877803504" style="color: #b12704;">+6283877803504</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Foursixna Universe. All rights reserved.</p>
+    </footer>
+</body
